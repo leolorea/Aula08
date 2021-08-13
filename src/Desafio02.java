@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Desafio02 {
 	/*Para um ano ser bissexto ele deve ser múltiplo de 4, mas não ser múltiplo de 100 (com exceção dos anos que forem múltiplos de 400).
@@ -7,6 +8,17 @@ A main do seu programa deve conter a digitação do ano, a chamada da função e a e
 
 	 * */
 	public static void main(String[] args) {
+		System.out.println("Digite o ano desejado para verificar se ele é bissexto: ");
+		Scanner scanner = new Scanner(System.in);
+		int anoDigitado = scanner.nextInt();
+		if ((anoDigitado%4==0) &&(anoDigitado%100==0) && (anoDigitado%400 ==0) ) {
+			System.out.println("O ano é bissexto!");
+		}else if ((anoDigitado%4==0) &&(anoDigitado%100!=0)){System.out.println("O ano é bissexto!");}else {
+			System.out.println("O ano Não é bissexto!");
+		}
+					scanner.close();
+		}
 		
-	}
+		
+	
 }

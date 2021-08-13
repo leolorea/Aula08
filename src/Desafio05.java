@@ -9,8 +9,15 @@ As funções são:
 •	Função agregadora: só autoriza a entrada no estabelecimento de clientes que cumprirem com as 3 funções anteriores.
 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		
+		
 
 	}
+	
+	public static boolean medirTemperatura(int temperatura) {
+		if (temperatura<=37);
+	}return true;
+	
 
 }
